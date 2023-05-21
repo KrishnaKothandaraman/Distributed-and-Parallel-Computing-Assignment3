@@ -13,6 +13,7 @@ You may view the source code for all the Java files written here and use this re
 ├── JPoker24Game.jar
 ├── JPoker24GameRoomServer.jar
 ├── JPoker24GameServer.jar
+├── res.jar
 └── security.policy
 ```
 
@@ -26,7 +27,7 @@ There are three main components to this project:
 ## Auth Server
 Set up:
 1. Run rmiregistry with the command `rmiregistry &`.
-   > **Note**: Remember to add the path to the `JPoker24GameServer.jar` file in your CLASSPATH to make sure the `rmiregistry` command works!
+   > **Note**: Remember to add the path to the `res.jar` file in your CLASSPATH to make sure the `rmiregistry` command works! `res.jar` contains the classfiles for the serverinterface as well as other important utils!
 2. In the submission, you will also notice a `security.policy` file along with an `authfiles/` directory. Edit the `security.policy` files to point to the `authfiles/` directory and the files within.
 
 **Run command**: `java -Djava.security.policy=<path-to-security.policy> -jar JPoker24GameServer.jar <ip-addr>`
