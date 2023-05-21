@@ -18,7 +18,6 @@ There are three main components to this project
   Set up:
     1. Run rmiregistry with `rmiregistry &` command.
     Note: Remember to add the path to this .jar file in your CLASSPATH to make sure the rmiregistry command works!
-
     2. In the submission you will also notice a security.policy file along with an authfiles/ directory. Edit the security.policy files to point to the authfiles/ directory and the files within
 
   <b>Run command</b>: java -Djava.security.policy=<path-to-security.policy> -jar JPoker24GameServer.jar <ip-addr>
