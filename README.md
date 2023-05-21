@@ -3,6 +3,19 @@
 **For TA's of Comp3258**
 You may view the source code for all the Java files written here and use this readme for instructions on how to run the submission!
 
+**Submission directory structure**
+```tree
+.
+├── authfiles
+│   ├── OnlineUser.txt
+│   ├── UserInfo.txt
+│   └── UserStats.txt
+├── JPoker24Game.jar
+├── JPoker24GameRoomServer.jar
+├── JPoker24GameServer.jar
+└── security.policy
+```
+
 > **Note**: After testing the package's .jar, sometimes when running these commands from the command line, you may notice the application taking a long time to set up once you click "Play Game". I'm not sure what the cause is, but if you encounter it, give it a minute or so to boot up! The same happens when you first set up the GameRoomServer.
 
 There are three main components to this project:
