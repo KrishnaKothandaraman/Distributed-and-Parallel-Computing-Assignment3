@@ -23,13 +23,10 @@ There are three main components to this project:
 2. **JPoker24GameServer.jar**: This is the .jar file that handles the authentication for the users through RMI.
 3. **JPoker24GameRoomServer.jar**: This is the .jar file that implements the GameRoomServer logic for opening rooms and handling players. The communication through JMS happens here.
 
-## Game Client
-**Run command**: `java -jar JPoker24Game.jar <ip-addr>`
-
 ## Auth Server
 Set up:
 1. Run rmiregistry with the command `rmiregistry &`.
-   > **Note**: Remember to add the path to this .jar file in your CLASSPATH to make sure the `rmiregistry` command works!
+   > **Note**: Remember to add the path to the `JPoker24GameServer.jar` file in your CLASSPATH to make sure the `rmiregistry` command works!
 2. In the submission, you will also notice a `security.policy` file along with an `authfiles/` directory. Edit the `security.policy` files to point to the `authfiles/` directory and the files within.
 
 **Run command**: `java -Djava.security.policy=<path-to-security.policy> -jar JPoker24GameServer.jar <ip-addr>`
@@ -40,4 +37,6 @@ For Glassfish, set up a connection factory called `jms/GameConnectionFactory` an
 
 **Run command**: `java -Djava.security.policy=<path-to-security.policy> -jar JPoker24GameRoomServer.jar`
 
+## Game Client
+**Run command**: `java -jar JPoker24Game.jar <ip-addr>`
 Once everything is set up, you should be able to play!
